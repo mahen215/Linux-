@@ -1,0 +1,120 @@
+# Networking & Nginx Fundamentals
+
+## 📚 Topics Covered
+
+Today, I learned the fundamentals of computer networking, web servers, proxies, and Nginx.
+
+### 1. What is the Internet?
+- The Internet is a worldwide network that connects computers and devices.
+- It helps us communicate and share information.
+- Basic flow: Client → Router → ISP → DNS → Web Server → Client.
+
+### 2. Client vs Server
+- **Client:** A device or application that requests data or services.
+- **Server:** A computer or software that receives requests and provides data or services.
+
+Examples:
+- Client: Laptop, Mobile, Web Browser.
+- Server: Web Server, Database Server.
+
+### 3. Web Server vs Application Server
+- **Web Server:** Handles HTTP/HTTPS requests and delivers web content.
+- **Application Server:** Runs application code and business logic.
+
+Examples:
+- Web Server: Nginx, Apache.
+- Application Server: Tomcat, Gunicorn.
+
+### 4. Forward Proxy vs Reverse Proxy
+
+**Forward Proxy**
+- Works on behalf of clients.
+- Forwards client requests to external websites.
+- Can control and filter outgoing traffic.
+
+**Reverse Proxy**
+- Works on behalf of servers.
+- Receives client requests and forwards them to backend servers.
+- Helps with security, routing, and load balancing.
+
+### 5. What is Nginx?
+Nginx (pronounced Engine-X) is an open-source web server.
+
+Main functions:
+- Web Server
+- Reverse Proxy
+- Load Balancer
+- HTTP Caching
+- SSL/TLS Termination
+
+Default ports:
+- HTTP: 80
+- HTTPS: 443
+
+### 6. SSL/TLS Termination
+- SSL/TLS Termination means handling HTTPS encryption and decryption at a reverse proxy or load balancer.
+- Nginx can decrypt incoming HTTPS requests and forward them to backend servers.
+- It helps manage secure connections.
+
+### 7. Load Balancing
+- Load balancing distributes incoming traffic across multiple backend servers.
+- It improves performance, availability, and reliability.
+- Example: Nginx distributes requests between App Server 1, App Server 2, and App Server 3.
+
+## 🐳 Nginx Practical with Docker
+
+### Step 1: Pull Nginx Image
+```bash
+docker pull nginx
+```
+
+### Step 2: Run Nginx Container
+```bash
+docker run -d --name my-nginx -p 8080:80 nginx
+```
+
+### Step 3: Check Running Containers
+```bash
+docker ps
+```
+
+### Step 4: Check Container Logs
+```bash
+docker logs my-nginx
+```
+
+### Step 5: Open in Browser
+```text
+http://localhost:8080
+```
+
+### Step 6: Stop Container
+```bash
+docker stop my-nginx
+```
+
+## 💻 Useful Nginx Commands
+
+```bash
+nginx -v
+nginx -t
+nginx -s reload
+```
+
+## 🎯 Key Learnings
+- Understood basic Internet communication.
+- Learned the difference between client and server.
+- Understood web servers and application servers.
+- Learned Forward Proxy and Reverse Proxy.
+- Explored Nginx and its major functions.
+- Understood SSL/TLS Termination.
+- Learned Load Balancing concepts.
+- Practiced running Nginx using Docker.
+
+## 🚀 Conclusion
+
+Today, I strengthened my networking fundamentals and learned how Nginx works as a web server, reverse proxy, and load balancer. I also performed a basic Nginx deployment using Docker.
+
+**Next Goal:** Practice Nginx Reverse Proxy and Load Balancing with multiple backend containers.
+
+#Networking #Linux #DevOps #Nginx #Docker #WebServer #ReverseProxy #LoadBalancing #LearningJourney
