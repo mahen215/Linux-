@@ -1,0 +1,132 @@
+# Day Learning Notes – Networking & Application Support
+
+## 1. Networking Basics
+
+### What is a Port?
+A port is a logical communication endpoint that identifies a specific application or service running on a computer.
+
+### Important Network Ports
+
+| Port | Service |
+|---|---|
+| 22 | SSH |
+| 53 | DNS |
+| 80 | HTTP |
+| 443 | HTTPS |
+| 3306 | MySQL |
+| 5432 | PostgreSQL |
+| 6379 | Redis |
+
+### HTTP and HTTPS
+- HTTP (HyperText Transfer Protocol) uses port 80 by default.
+- HTTPS (HyperText Transfer Protocol Secure) uses port 443 by default.
+
+### Nginx Port
+Nginx uses port 80 by default for HTTP traffic.
+
+## 2. Types of Applications
+
+### Standalone Application
+An application that runs independently on a computer.
+
+Examples:
+- Calculator
+- Notepad
+- VLC Media Player
+- MS Paint
+
+### Web Application
+A software application accessed through a web browser using a network.
+
+Examples:
+- Gmail
+- Amazon
+- Google Docs
+- Facebook
+
+### Remote Server
+A remote server is a computer accessed over a network that provides services, resources, or data to other computers.
+
+Example:
+- AWS EC2
+- Google Cloud
+- Microsoft Azure
+
+## 3. Web Application Architecture
+
+A typical web application contains:
+
+1. Client / Frontend – User interface.
+2. Web Server – Handles incoming HTTP requests (e.g., Nginx).
+3. Backend – Processes application logic.
+4. Database – Stores application data.
+
+## 4. Application Support
+
+Application Support is the process of monitoring, maintaining, troubleshooting, and fixing software applications.
+
+### Types of Application Support
+
+- L1 Support – Basic troubleshooting and user queries.
+- L2 Support – Technical troubleshooting and log checking.
+- L3 Support – Advanced debugging and code-level fixes.
+
+### User Queries
+A user query is a question, request, or problem reported by a user.
+
+Examples:
+- Login problems.
+- Password issues.
+- Website loading slowly.
+- Application errors.
+
+### Support Ticket
+A support ticket is a recorded user issue or request in a ticketing system.
+
+Examples:
+- Jira Service Management
+- ServiceNow
+- Freshdesk
+- Zendesk
+
+## 5. Application Maintenance
+
+Application Maintenance means regularly updating, monitoring, fixing bugs, and improving software applications.
+
+### Four Types of Application Maintenance
+
+1. Corrective Maintenance – Fixing bugs and errors.
+2. Perfective Maintenance – Improving performance and adding features.
+3. Preventive Maintenance – Preventing future problems.
+4. Adaptive Maintenance – Modifying applications for new environments.
+
+## 6. Important DevOps Tools
+
+| Tool | Purpose |
+|---|---|
+| Linux | Server Management |
+| Nginx | Web Server |
+| Docker | Containerization |
+| Git | Version Control |
+| SQL | Database Queries |
+| Grafana | Monitoring |
+| Prometheus | Metrics Monitoring |
+| AWS CloudWatch | Logs and Monitoring |
+
+## 7. Today's Learning Summary
+
+Today I learned:
+- What is a Port?
+- HTTP and HTTPS ports.
+- Nginx default port 80.
+- Types of Applications.
+- Standalone Applications.
+- Remote Servers.
+- Web Applications.
+- Application Support.
+- User Queries and Support Tickets.
+- Application Maintenance and its four types.
+- L1, L2, and L3 Support.
+
+**Learning Goal:** Building strong foundations in Networking, Linux, Application Support, and DevOps.
+
