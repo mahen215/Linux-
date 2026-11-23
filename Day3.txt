@@ -1,0 +1,253 @@
+# Linux Fundamentals – Learning Notes
+
+## 📚 Topics Covered (23 November 2026)
+
+Today, I learned Linux fundamentals, operating system concepts, boot process, and the history of Linux.
+
+---
+
+## 1. What is Linux?
+
+Linux is an open-source, Unix-like operating system kernel that manages hardware and system resources.
+
+### Main Functions of Linux
+- Process Management
+- Memory Management
+- File System Management
+- Device Management
+- User and Permission Management
+- Network Management
+- Security Management
+
+### Examples of Linux Distributions
+- Ubuntu
+- Debian
+- Red Hat Enterprise Linux (RHEL)
+- Fedora
+- Linux Mint
+
+---
+
+## 2. Linux Architecture
+
+Linux architecture consists of different layers:
+
+1. **Hardware:** CPU, RAM, SSD, Keyboard and Network Card.
+2. **Kernel:** Manages hardware and system resources.
+3. **Shell:** Provides a command-line interface to interact with the operating system.
+4. **Applications:** Programs such as Nginx, Docker and MySQL.
+5. **User:** Interacts with the system.
+
+### Important Components
+
+**Kernel**
+- Core component of Linux.
+- Manages CPU, RAM, processes, devices and networking.
+
+**Shell**
+- Command-line interpreter.
+- Examples: Bash, Zsh and Fish.
+
+**File System**
+- Organizes files and directories.
+- Linux uses a hierarchical directory structure starting from `/`.
+
+---
+
+## 3. Linux vs Windows
+
+| Feature | Linux | Windows |
+|---|---|---|
+| Developer | Open-source community and organizations | Microsoft |
+| Source Code | Mostly open-source | Proprietary |
+| Cost | Many distributions are free | License generally paid |
+| Interface | GUI and CLI | GUI and CLI |
+| Customization | Highly customizable | More restricted |
+| Package Management | APT, DNF, Pacman | Microsoft Store, EXE, MSI |
+| File Systems | ext4, XFS, Btrfs | NTFS, FAT32, exFAT |
+| Terminal | Bash, Zsh | PowerShell, CMD |
+| Server Usage | Very common | Also widely used |
+
+### Linux in DevOps
+- Cloud Server Management
+- Docker and Containers
+- Kubernetes
+- Nginx Web Server
+- Shell Scripting
+- Automation
+
+---
+
+## 4. What is a Boot Loader?
+
+A Boot Loader is a program that loads the operating system kernel into memory during the computer startup process.
+
+### Example
+GRUB – Grand Unified Bootloader.
+
+### Functions of Boot Loader
+- Loads the Linux kernel.
+- Provides an operating system selection menu.
+- Supports multiple operating systems.
+- Allows selection of different kernel versions.
+
+### Linux Boot Process
+
+1. BIOS / UEFI
+2. Boot Loader (GRUB)
+3. Linux Kernel
+4. Init System (systemd)
+5. System Services
+6. Login
+
+---
+
+## 5. History of Linux
+
+| Year | Event |
+|---|---|
+| 1969 | UNIX created at Bell Labs |
+| 1983 | GNU Project started by Richard Stallman |
+| 1991 | Linus Torvalds announced Linux |
+| 1992 | Linux kernel adopted GNU GPL license |
+| 1993 | Debian and Slackware distributions appeared |
+| 1994 | Linux Kernel 1.0 released |
+| 1996 | Tux became the Linux mascot |
+| 2004 | Ubuntu 4.10 released |
+| 2005 | Git created by Linus Torvalds |
+| 2008 | First Android phone launched using Linux kernel |
+
+### Important People
+- **Linus Torvalds:** Creator of the Linux kernel.
+- **Richard Stallman:** Founder of the GNU Project.
+- **Dennis Ritchie:** Co-creator of UNIX and creator of C.
+- **Ken Thompson:** Co-creator of UNIX.
+
+---
+
+## 6. UNIX vs GNU vs Linux
+
+**UNIX**
+- Operating system family.
+- Developed at Bell Labs.
+- Influenced modern operating systems.
+
+**GNU**
+- Free software project started in 1983.
+- Developed tools such as Bash, GCC and GNU utilities.
+
+**Linux**
+- Kernel developed by Linus Torvalds in 1991.
+
+**GNU/Linux**
+- GNU tools combined with the Linux kernel to form a complete operating system.
+
+---
+
+## 7. Basic Linux Commands
+
+| Command | Description |
+|---|---|
+| `pwd` | Shows current directory |
+| `ls` | Lists files and directories |
+| `cd` | Changes directory |
+| `mkdir` | Creates a directory |
+| `touch` | Creates a file |
+| `cat` | Displays file content |
+| `whoami` | Shows current username |
+| `uname -a` | Shows system information |
+| `ps aux` | Displays running processes |
+| `free -h` | Displays memory information on Linux |
+
+### Practical Commands
+
+```bash
+# Check current directory
+pwd
+
+# Create a directory
+mkdir linux-practice
+
+# Enter directory
+cd linux-practice
+
+# Create files
+touch notes.txt commands.txt
+
+# List files
+ls -l
+
+# Write content
+echo "I am learning Linux" > notes.txt
+
+# Read file
+cat notes.txt
+```
+
+Note: These commands were introduced for practice. They are not all Linux-only; several also work on macOS.
+
+---
+
+## 8. Important Interview Questions
+
+**Q1. What is Linux?**
+
+Linux is an open-source, Unix-like operating system kernel that manages hardware and system resources.
+
+**Q2. Who created Linux?**
+
+Linus Torvalds created the Linux kernel in 1991.
+
+**Q3. What is a Kernel?**
+
+The kernel is the core component of an operating system that manages hardware and system resources.
+
+**Q4. What is a Shell?**
+
+A shell is a command-line interpreter used to interact with the operating system.
+
+**Q5. What is a Boot Loader?**
+
+A boot loader is a program that loads the operating system kernel into memory during startup.
+
+**Q6. What is GRUB?**
+
+GRUB stands for Grand Unified Bootloader.
+
+**Q7. What is a Linux Distribution?**
+
+A Linux distribution is a complete operating system built around the Linux kernel.
+
+**Q8. What is the GNU Project?**
+
+GNU is a free software project started by Richard Stallman in 1983.
+
+---
+
+## 🎯 Key Learnings
+
+- Understood Linux fundamentals and architecture.
+- Learned the difference between Linux and Windows.
+- Understood Kernel, Shell and Hardware.
+- Learned the Linux boot process.
+- Understood the role of GRUB Boot Loader.
+- Learned the history of UNIX, GNU and Linux.
+- Explored Linux distributions.
+- Practiced basic Linux commands.
+- Understood why Linux is important in DevOps.
+
+## 🚀 Next Learning Goals
+
+- Linux File System in depth
+- Linux File Permissions
+- Linux User and Group Management
+- Process Management
+- Linux Networking Commands
+- Linux Services and Package Management
+- Shell Scripting
+
+---
+
+**Learning Journey:** Linux Fundamentals | DevOps Learning
+
+#Linux #LinuxCommands #DevOps #Ubuntu #OperatingSystem #BootLoader #GRUB #GNU #LinuxHistory #LearningJourney
