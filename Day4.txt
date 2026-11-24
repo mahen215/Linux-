@@ -1,0 +1,453 @@
+# Linux, Networking & DevOps – Complete Revision Notes
+
+## 1. What is an Application?
+
+An application is a software program designed to perform a specific task for users.
+
+**Examples:**
+- Chrome – Web browsing
+- WhatsApp – Messaging
+- MS Excel – Spreadsheet work
+- Netflix – Video streaming
+
+### Types of Applications
+1. **Desktop Application:** Installed on a computer. Example: VLC, MS Word.
+2. **Mobile Application:** Runs on mobile devices. Example: WhatsApp.
+3. **Web Application:** Runs through a web browser. Example: Gmail.
+4. **Server Application:** Runs on a server and provides services. Example: Nginx.
+
+## 2. What is Linux?
+
+Linux is an open-source, Unix-like operating system kernel. Linux distributions combine the kernel with system utilities and applications to provide a complete operating system.
+
+**Examples:** Ubuntu, Debian, Fedora, RHEL.
+
+### Linux Architecture
+
+User → Applications → Shell → Kernel → Hardware
+
+- **Shell:** Accepts and interprets user commands.
+- **Kernel:** Manages CPU, RAM, processes, files and devices.
+- **Hardware:** Physical components of a computer.
+
+### Important Linux Functions
+- Process management
+- Memory management
+- File management
+- User and permission management
+- Device management
+- Network management
+
+## 3. Linux vs Windows
+
+| Linux | Windows |
+|---|---|
+| Mostly open-source | Proprietary OS |
+| Many distributions | Microsoft Windows editions |
+| Bash, Zsh shells | CMD, PowerShell |
+| APT, DNF package managers | EXE, MSI, Microsoft Store |
+| Commonly used on servers | Commonly used on desktops and servers |
+| ext4, XFS, Btrfs filesystems | NTFS, FAT32, exFAT |
+
+Both Linux and Windows are operating systems.
+
+## 4. History of Linux
+
+- **1969:** UNIX developed at Bell Labs.
+- **1983:** Richard Stallman started the GNU Project.
+- **1991:** Linus Torvalds started Linux kernel development.
+- **1992:** Linux kernel adopted the GNU GPL license.
+- **1993:** Debian and Slackware distributions appeared.
+- **1994:** Linux kernel 1.0 released.
+- **1996:** Tux became the Linux mascot.
+- **2004:** Ubuntu first released.
+- **2005:** Git was created by Linus Torvalds.
+- **2008:** First Android phone launched using a modified Linux kernel.
+
+### UNIX vs GNU vs Linux
+- **UNIX:** An operating system family.
+- **GNU:** A free software project that provides tools and utilities.
+- **Linux:** The operating system kernel.
+- **GNU/Linux:** GNU tools combined with the Linux kernel.
+
+## 5. What is a Boot Loader?
+
+A boot loader is a program that loads the operating system kernel into RAM during system startup.
+
+**Example:** GRUB (Grand Unified Bootloader).
+
+### Linux Boot Process
+
+1. Power ON
+2. BIOS/UEFI
+3. Boot Loader (GRUB)
+4. Linux Kernel
+5. Init System (systemd)
+6. Services Start
+7. Login Screen
+
+**Remember:** Boot loader loads the kernel; the kernel manages system resources.
+
+## 6. What is the Internet?
+
+The Internet is a worldwide network of interconnected computer networks that communicate using standard protocols.
+
+### How the Internet Works
+
+User Device → Wi-Fi Router → ISP → DNS → Web Server → Response to User
+
+### Important Terms
+- **ISP:** Internet Service Provider.
+- **DNS:** Domain Name System; converts domain names into IP addresses.
+- **IP Address:** A logical address used to identify a device on a network.
+- **Router:** Connects networks and forwards data packets.
+
+## 7. What is a Client and Server?
+
+**Client:** A device or application that requests a service.
+
+**Server:** A computer or software that receives requests and provides services or data.
+
+Example:
+
+Browser (Client) → Request → Web Server → Response → Browser
+
+## 8. What is a Port?
+
+A port is a logical communication endpoint used by applications and services to communicate over a network.
+
+### Important Port Numbers
+
+| Port | Protocol / Service |
+|---|---|
+| 20, 21 | FTP |
+| 22 | SSH |
+| 25 | SMTP |
+| 53 | DNS |
+| 80 | HTTP |
+| 110 | POP3 |
+| 143 | IMAP |
+| 443 | HTTPS |
+| 3306 | MySQL |
+| 5432 | PostgreSQL |
+
+**Remember:**
+- HTTP uses port 80 by default.
+- HTTPS uses port 443 by default.
+- SSH uses port 22 by default.
+
+## 9. What is HTTP?
+
+HTTP stands for Hypertext Transfer Protocol.
+
+It is used for communication between a client (browser) and a web server.
+
+Example: `http://example.com`
+
+## 10. What is a Web Application?
+
+A web application is software that users access through a web browser over a network.
+
+**Examples:** Gmail, Facebook, Google Docs.
+
+### Basic Web Application Architecture
+
+User → Browser → Nginx → Backend Application → Database
+
+## 11. Web Server vs Application Server
+
+| Web Server | Application Server |
+|---|---|
+| Handles HTTP requests | Runs application logic |
+| Serves static files | Processes dynamic requests |
+| Can work as reverse proxy | Communicates with databases and other services |
+| Example: Nginx, Apache | Example: Tomcat, WildFly |
+
+## 12. What is Nginx?
+
+Nginx (pronounced Engine-X) is an open-source web server.
+
+### Main Uses
+1. Web server
+2. Reverse proxy
+3. Load balancer
+4. HTTP cache
+5. TLS termination
+
+### Nginx Default Ports
+- HTTP – 80
+- HTTPS – 443
+
+### Docker Practice
+
+```bash
+docker pull nginx
+
+docker run -d --name my-nginx -p 8080:80 nginx
+
+docker ps
+
+docker logs my-nginx
+
+docker stop my-nginx
+```
+
+Open in browser: `http://localhost:8080`
+
+## 13. What is a Remote Server?
+
+A remote server is a computer or server that we access over a network instead of using it directly on our local machine.
+
+Example: Connecting to a Linux cloud server using SSH.
+
+```bash
+ssh username@server-ip
+```
+
+## 14. What is Application Support?
+
+Application Support means helping users and maintaining applications so they work correctly.
+
+### Common Responsibilities
+- Troubleshooting application issues
+- Monitoring application performance
+- Checking logs
+- Resolving user queries
+- Reporting bugs
+- Supporting application availability
+
+## 15. What are User Queries?
+
+User queries are questions, complaints or problems reported by users while using an application.
+
+**Examples:**
+- Application is not opening.
+- Login is not working.
+- Page is loading slowly.
+- User cannot access a particular feature.
+
+## 16. What is Application Maintenance?
+
+Application Maintenance means updating, fixing and improving an application after it has been deployed.
+
+### Types
+1. **Corrective:** Fixing bugs and errors.
+2. **Adaptive:** Updating an application for a changed environment.
+3. **Perfective:** Improving performance and features.
+4. **Preventive:** Preventing future problems.
+
+## 17. What is a Virtual Machine (VM)?
+
+A Virtual Machine is a software-based computer that runs an operating system inside another physical computer.
+
+### Example
+A MacBook can run an Ubuntu Linux VM using virtualization software.
+
+### VM Components
+- Virtual CPU
+- Virtual RAM
+- Virtual Disk
+- Virtual Network Adapter
+- Guest Operating System
+
+## 18. What is a Forward Proxy?
+
+A Forward Proxy works on behalf of clients and forwards their requests to external servers.
+
+### Uses
+- Hides client IP from destination servers
+- Internet access control
+- Website filtering
+- Caching
+
+Example: Squid Proxy.
+
+**Diagram:**
+
+Client → Forward Proxy → Internet → Website
+
+## 19. What is a Reverse Proxy?
+
+A Reverse Proxy works on behalf of backend servers. It receives client requests and forwards them to the appropriate backend server.
+
+### Uses
+- Load balancing
+- Security
+- Request routing
+- TLS termination
+- Caching
+
+Example: Nginx.
+
+**Diagram:**
+
+Client → Reverse Proxy (Nginx) → Backend Server
+
+### Forward Proxy vs Reverse Proxy
+
+| Forward Proxy | Reverse Proxy |
+|---|---|
+| Works for clients | Works for servers |
+| Located on client side | Located on server side |
+| Forwards client requests | Forwards requests to backend servers |
+| Example: Squid | Example: Nginx |
+
+## 20. What is SSL/TLS?
+
+SSL stands for Secure Sockets Layer. TLS stands for Transport Layer Security.
+
+TLS provides encryption and helps protect data during network communication. SSL is an older, deprecated protocol; modern systems use TLS.
+
+### HTTPS
+HTTPS = HTTP + TLS encryption.
+
+Default HTTPS port: 443.
+
+## 21. What is TLS Termination?
+
+TLS termination means the reverse proxy or load balancer handles the encrypted HTTPS connection from the client.
+
+After decrypting the request, it forwards the request to the backend server.
+
+### Diagram
+
+Client (HTTPS) → Nginx (TLS Termination) → Backend Server
+
+**Benefits:**
+- Centralized certificate management
+- Reduced TLS processing on backend servers
+- Easier security management
+
+Note: If traffic between Nginx and the backend crosses an untrusted network, it should also be protected.
+
+## 22. What is Load Balancing?
+
+Load balancing distributes incoming network traffic across multiple backend servers.
+
+### Benefits
+- Improves performance
+- Prevents one server from becoming overloaded
+- Improves availability
+- Supports scalability
+
+### Diagram
+
+Client → Load Balancer → Server 1 / Server 2 / Server 3
+
+---
+
+# Important Commands for Revision
+
+### Basic Linux Commands
+
+```bash
+pwd
+ls
+ls -l
+cd
+mkdir
+touch
+cp
+mv
+rm
+cat
+clear
+whoami
+```
+
+### Linux Monitoring and Networking Commands
+
+```bash
+ps aux
+top
+df -h
+free -h
+ip addr
+ip route
+ping google.com
+curl -I https://google.com
+ss -tuln
+```
+
+Note: These are Linux commands; some may not work natively on macOS.
+
+### Useful macOS Commands
+
+```bash
+ifconfig
+ipconfig getifaddr en0
+ping google.com
+nslookup google.com
+curl -I https://google.com
+```
+
+---
+
+# Interview Questions & Answers
+
+**Q1. What is Linux?**  
+Linux is an open-source, Unix-like operating system kernel.
+
+**Q2. What is a kernel?**  
+Kernel is the core part of an operating system that manages hardware and system resources.
+
+**Q3. What is a boot loader?**  
+A boot loader loads the operating system kernel into memory during startup.
+
+**Q4. What is GRUB?**  
+GRUB is a commonly used boot loader in Linux systems.
+
+**Q5. What is DNS?**  
+DNS converts domain names into IP addresses.
+
+**Q6. What is a port?**  
+A port is a logical communication endpoint used by network applications.
+
+**Q7. What is the default HTTP port?**  
+Port 80.
+
+**Q8. What is the default HTTPS port?**  
+Port 443.
+
+**Q9. What is Nginx?**  
+Nginx is a web server that can also work as a reverse proxy and load balancer.
+
+**Q10. What is a remote server?**  
+A remote server is accessed over a network from another computer.
+
+**Q11. What is a Virtual Machine?**  
+A VM is a software-based computer that runs an operating system virtually.
+
+**Q12. What is a Forward Proxy?**  
+A Forward Proxy works on behalf of clients.
+
+**Q13. What is a Reverse Proxy?**  
+A Reverse Proxy works on behalf of backend servers.
+
+**Q14. What is TLS termination?**  
+It is the process of handling and decrypting incoming TLS connections at a proxy or load balancer.
+
+**Q15. What is load balancing?**  
+Load balancing distributes incoming traffic across multiple servers.
+
+**Q16. What is application maintenance?**  
+It is the process of fixing, updating and improving an application.
+
+**Q17. What is application support?**  
+It is the process of helping users and troubleshooting application problems.
+
+---
+
+# My Learning Goals
+
+- Strengthen Linux fundamentals.
+- Understand networking concepts.
+- Practice Linux commands.
+- Learn Nginx and reverse proxy.
+- Understand Docker and virtualization.
+- Improve application support and troubleshooting skills.
+- Practice interview questions regularly.
+
+**Learning Track:** Linux | Networking | Nginx | Docker | DevOps
+
+
